@@ -18,7 +18,7 @@
 
 ## ESTIMATIVA PARA MARÇO DE 2024
 
-##### For-truck
+## For-truck
 - Como rodar: npm run dev = next dev, que roda o servidor de desenvolvimento, localhost:3000 ou 4000
 
 
