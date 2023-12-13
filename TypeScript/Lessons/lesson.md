@@ -44,5 +44,19 @@
 
 #### Arrays
 
+- We can mix types in arrays, but it's not recommended
+
+- We can use 'let x: (string | number)[] = []' to set an array to only hold strings and numbers
+
+#### Tuples
+
+- Tuples are arrays with a fixed number of elements, the types of the elements are known
+
+- Example: 
+```
+let x: [string, number] = ['hello', 10]
+```
+
+
 
 
