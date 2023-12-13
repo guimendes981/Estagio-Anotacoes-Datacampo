@@ -36,7 +36,7 @@
 - When TS can't infer the type of a variable, it will set it to 'any'
 
 - Union types allow us to set a variable to multiple types, for example 'let x: number | string = 10' or 'let x: number | string = '10''
-        - Union types are not restricted to only two types, we can have as many as we want
+    -  Union types are not restricted to only two types, we can have as many as we want
 
 
 
