@@ -1,20 +1,5 @@
-let myName: string 
-let meaningOfLife: number
-let isLoading: boolean
-let album: string | number | boolean // union type
+let stringArray = ['one', 'hey', 'Gui'];
 
-meaningOfLife = 42
-isLoading = true
-myName = 'John Doe'
-album = true
+let guitars = ['Gibson', 'Fender', 5150];
 
-const sum = (a: number, b: string) => {
-    return a + b
-} // receive a type and return a type
-
-
-let postId: string | number
-let isActiv: number | boolean 
-
-
-let re: RegExp = /\w+/g
+let mixedData =['EVH', 1984, true];

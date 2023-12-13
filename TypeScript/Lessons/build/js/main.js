@@ -1,15 +1,4 @@
 "use strict";
-let myName;
-let meaningOfLife;
-let isLoading;
-let album; // union type
-meaningOfLife = 42;
-isLoading = true;
-myName = 'John Doe';
-album = true;
-const sum = (a, b) => {
-    return a + b;
-}; // receive a type and return a type
-let postId;
-let isActiv;
-let re = /\w+/g;
+let stringArray = ['one', 'hey', 'Gui'];
+let guitars = ['Gibson', 'Fender', 5150];
+let mixedData = ['EVH', 1984, true];
