@@ -12,3 +12,4 @@ const sum = (a, b) => {
 }; // receive a type and return a type
 let postId;
 let isActiv;
+let re = /\w+/g;
