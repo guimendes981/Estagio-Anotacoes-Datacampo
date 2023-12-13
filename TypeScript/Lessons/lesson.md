@@ -23,4 +23,14 @@
 - To set explicit types on variables we can use ':type' after the variable name, the type can be 'string', 'number', 'boolean', 'any', 'void', 'null', 'undefined', 'never', 'unknown', 'object', 'array', 'tuple', 'enum', 'function', 'class', 'interface', 'type alias', 'generics'
 
 
+# Lesson2
+
+- TypeScrpit will try to automatically infer the type of a variable, you can see that by hovering over the variable name
+
+- We can manually set the type of a variable by using ':type' after the variable name, telling TS what type of data the variable will hold
+
+- If we set a variable to a type and then try to set it to a different type, TS will give us an error
+
+- The use of 'any' is discouraged because it defeats the purpose of TS, any basically means that the variable can be of any type
+
 
