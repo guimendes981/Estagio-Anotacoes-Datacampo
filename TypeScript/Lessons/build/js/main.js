@@ -12,4 +12,4 @@ bands.push('Van Halen');
 //Tuple
 let myTuple = ['Gui', 31, true]; //tuples are fixed length and fixed type
 let mixed = ['John', 1984, true];
-mixed = myTuple;
+myTuple = mixed;
