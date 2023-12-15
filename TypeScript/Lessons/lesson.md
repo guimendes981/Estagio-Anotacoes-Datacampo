@@ -66,6 +66,19 @@ let x: [string, number] = ['hello', 10]
 - If we want to make an object type optional we can use '?', for example 'let x: {name: string, age?: number} = {name: 'John'}', using '?' after a property name makes it optional
 
 
+#### Functions
+
+- By using ``` guitarist: Guitarist ``` we are saying that the function is expecting an object of type Guitarist
+
+- ```
+const greetGuitarist = (guitaris: Guitarist) => {
+    console.log(`Hello ${guitarist.name}`)
+}
+```
+
+
+
+
 
 
 

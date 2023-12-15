@@ -30,7 +30,9 @@ let evh = {
 };
 let JP = {
     name: 'Jimmy',
-    active: true,
     albums: ['Led Zeppelin I', 'Led Zeppelin II', 1969]
 };
-evh.y;
+//functions
+const greetGuitarrist = (guitarist) => {
+    return `Hello ${guitarist.name}`;
+};

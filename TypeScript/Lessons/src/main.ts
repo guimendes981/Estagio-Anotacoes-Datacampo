@@ -40,7 +40,7 @@ exampleObj.prop2 =  false;
 
 type Guitarist = {
     name: string;
-    active: boolean;
+    active?: boolean;
     albums: (string | number)[];
 }
 
@@ -52,9 +52,14 @@ let evh: Guitarist = {
 
 let JP: Guitarist = {
     name: 'Jimmy',
-    active: true,
     albums: ['Led Zeppelin I', 'Led Zeppelin II', 1969]
 }
 
-evh.y
+
+//functions
+
+const greetGuitarrist = (guitarist: Guitarist) => {
+    return `Hello ${guitarist.name}`;
+}
+
 
