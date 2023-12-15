@@ -118,6 +118,15 @@ let myName: 'Gui'
 myName = 'John' // error
 ```
 
+- We can use literal types to create a set of valid values
+
+``` 
+type validNumbers = 1 | 2 | 3 | 4 | 5;
+let number: validNumbers = 3;
+```
+
+
+
 
 
 

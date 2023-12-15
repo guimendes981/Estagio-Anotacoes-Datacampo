@@ -14,5 +14,6 @@ type UserId = stringOrNumber
 
 //literal types
 let myName: 'Gui'
-myName = 'John'
+
+let userName: 'Dave' | 'Reggie' | 'Sarah'
 
