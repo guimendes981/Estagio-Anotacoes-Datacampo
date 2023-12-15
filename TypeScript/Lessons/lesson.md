@@ -70,7 +70,7 @@ let x: [string, number] = ['hello', 10]
 
 - By using ``` guitarist: Guitarist ``` we are saying that the function is expecting an object of type Guitarist
 
-- ```
+```
 const greetGuitarist = (guitaris: Guitarist) => {
     console.log(`Hello ${guitarist.name}`)
 }
