@@ -91,7 +91,23 @@ const greetGuitarist = (guitaris: Guitarist) => {
 
 # Lesson 4
 
+#### Type Aliases
 
+- Type aliases allow us to create a new name for a type, they are similar to interfaces but they can name primitives, unions, tuples and any other types that you'd otherwise have to write by hand
+
+```
+type stringOrNumber = string | number;
+
+type stringOrNumberArray = (string | number)[];
+
+type Guitarist = {
+    name: string;
+    active?: boolean;
+    albums: (string | number)[];
+}
+
+type UserId = stringOrNumber
+```
 
 
 
