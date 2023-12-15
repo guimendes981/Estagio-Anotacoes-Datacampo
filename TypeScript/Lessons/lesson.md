@@ -57,6 +57,15 @@
 let x: [string, number] = ['hello', 10]
 ```
 
+#### Objects
+
+- We can use 'let x: {name: string, age: number} = {name: 'John', age: 30}' to set an object to only hold strings and numbers
+
+- TS does not allow us to add properties to an object that are not defined in the object type
+
+- If we want to make an object type optional we can use '?', for example 'let x: {name: string, age?: number} = {name: 'John'}', using '?' after a property name makes it optional
+
+
 
 
 
