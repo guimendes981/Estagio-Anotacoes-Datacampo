@@ -76,6 +76,8 @@ const greetGuitarist = (guitaris: Guitarist) => {
 }
 ```
 
+- In the beggining of the function, both type and interface are valid, but if we want to use the interface we have to use 'implements' instead of ':'
+
 
 
 
