@@ -109,6 +109,15 @@ type Guitarist = {
 type UserId = stringOrNumber
 ```
 
+#### Literal Types
+
+- Literal types allow us to specify the exact value a string, number or boolean must have
+
+```
+let myName: 'Gui'
+myName = 'John' // error
+```
+
 
 
 

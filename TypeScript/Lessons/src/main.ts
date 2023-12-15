@@ -12,3 +12,7 @@ type Guitarist = {
 
 type UserId = stringOrNumber
 
+//literal types
+let myName: 'Gui'
+myName = 'John'
+
