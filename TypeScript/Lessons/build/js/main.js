@@ -29,10 +29,24 @@ let evh = {
     albums: ['Van Halen I', 'Van Halen II', 1984]
 };
 let JP = {
-    name: 'Jimmy',
+    active: true,
     albums: ['Led Zeppelin I', 'Led Zeppelin II', 1969]
 };
 //functions
 const greetGuitarrist = (guitarist) => {
-    return `Hello ${guitarist.name}`;
+    if (guitarist.name) {
+        return `Hello ${guitarist.name.toLocaleUpperCase()}`;
+    }
+    return `Hello`;
 };
+console.log(greetGuitarrist(JP));
+//ENUMS
+var Grade;
+(function (Grade) {
+    Grade[Grade["U"] = 2] = "U";
+    Grade[Grade["D"] = 3] = "D";
+    Grade[Grade["C"] = 4] = "C";
+    Grade[Grade["B"] = 5] = "B";
+    Grade[Grade["A"] = 6] = "A";
+})(Grade || (Grade = {}));
+console.log(Grade.U);

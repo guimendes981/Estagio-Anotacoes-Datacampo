@@ -79,6 +79,25 @@ const greetGuitarist = (guitaris: Guitarist) => {
 - In the beggining of the function, both type and interface are valid, but if we want to use the interface we have to use 'implements' instead of ':'
 
 
+#### Enums
+
+- Enums allow us to define a set of named constants, they make our code more readable and less prone to errors
+
+- Unlike most TS features, enums are not a type-level add to JS, but somethig added to the language runtime.
+
+
+- They start at 0 by default, but we can change that by setting the first value to something else
+
+
+# Lesson 4
+
+
+
+
+
+
+
+
 
 
 

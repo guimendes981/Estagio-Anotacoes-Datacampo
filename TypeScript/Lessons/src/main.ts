@@ -51,7 +51,7 @@ let evh: Guitarist = {
 }
 
 let JP: Guitarist = {
-    name: 'Jimmy',
+    active: true,
     albums: ['Led Zeppelin I', 'Led Zeppelin II', 1969]
 }
 
@@ -59,7 +59,29 @@ let JP: Guitarist = {
 //functions
 
 const greetGuitarrist = (guitarist: Guitarist) => {
-    return `Hello ${guitarist.name}`;
+    if (guitarist.name){
+        return `Hello ${guitarist.name.toLocaleUpperCase()}`;
+    }
+    return `Hello`;
 }
+
+console.log(greetGuitarrist(JP));
+
+
+
+//ENUMS
+
+enum Grade {
+    U = 2,
+    D,
+    C,
+    B,
+    A,
+ }
+
+
+ console.log(Grade.U);
+ 
+
 
 
