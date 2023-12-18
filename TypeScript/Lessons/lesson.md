@@ -127,7 +127,7 @@ type validNumbers = 1 | 2 | 3 | 4 | 5;
 let number: validNumbers = 3;
 ```
 
-## optional parameters
+## Optional parameters
 
 - We can use '?' to make a parameter optional
 
