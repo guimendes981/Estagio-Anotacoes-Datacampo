@@ -143,6 +143,20 @@ const add = (a: number, b?: number) => {
 }
 ```
 
+#### Default parameters
+
+- We can use '=' to set a default value for a parameter
+
+- Default parameters must be at the end of the parameter list
+
+```
+const add = (a: number, b: number = 10) => {
+    return a + b;
+}
+```
+
+
+
 
 
 

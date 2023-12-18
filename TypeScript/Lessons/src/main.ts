@@ -57,3 +57,15 @@ const addAll = (a: number, b:number, c?: number): number => {
     }
     return a + b; //if c is undefined, return a + b
 }
+
+
+//default parameters
+const sumAll = (a: number, b:number, c: number = 2): number => {
+    return a + b + c; //if c is undefined, return a + b
+}
+
+logMsg(addAll(2, 2 ,2)) //6
+
+logMsg(addAll(2, 2)) //4
+
+logMsg(sumAll(2, 2)) //6
