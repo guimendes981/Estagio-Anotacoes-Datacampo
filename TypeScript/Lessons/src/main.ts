@@ -27,3 +27,33 @@ const logMsg = (message: any): void => {
     console.log(message);
     
 }
+
+
+logMsg('Hello World')
+logMsg(add(5, 5)) //add(5, 5) is a number
+
+
+let subtract = function (c: number, d: number):
+number {
+    return c - d;
+}
+
+type mathFunction = (a: number, b: number) => number;
+// interface mathFunction {(a: number, b: number): number};
+
+//the two parameters are numbers and the return value is a number
+let multiply: mathFunction = function(c, d) {
+    return c * d;
+} //multiply is a mathFunction, that is a function that takes two numbers and returns a number
+
+
+logMsg(multiply(5, 5)) //multiply(5, 5) is a number
+
+
+
+const addAll = (a: number, b:number, c?: number): number => {
+    if (typeof c !== 'undefined') { 
+        return a + b + c; //if c is defined, return a + b + c
+    }
+    return a + b; //if c is undefined, return a + b
+}

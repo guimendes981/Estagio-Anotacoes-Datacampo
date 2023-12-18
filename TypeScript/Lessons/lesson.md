@@ -127,6 +127,23 @@ type validNumbers = 1 | 2 | 3 | 4 | 5;
 let number: validNumbers = 3;
 ```
 
+#### optional parameters
+
+- We can use '?' to make a parameter optional
+
+- Optional parameters must be at the end of the parameter list
+
+```
+const add = (a: number, b?: number) => {
+    if (b) {
+        return a + b;
+    } else {
+        return a;
+    }
+}
+```
+
+
 
 
 
