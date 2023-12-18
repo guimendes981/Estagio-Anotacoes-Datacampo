@@ -60,7 +60,7 @@ const addAll = (a: number, b:number, c?: number): number => {
 
 
 //default parameters
-const sumAll = (a: number, b:number, c: number = 2): number => {
+const sumAll = (a: number = 10, b:number, c: number = 2 ): number => {
     return a + b + c; //if c is undefined, return a + b
 }
 
@@ -68,4 +68,4 @@ logMsg(addAll(2, 2 ,2)) //6
 
 logMsg(addAll(2, 2)) //4
 
-logMsg(sumAll(2, 2)) //6
+logMsg(sumAll(undefined, 2)) //6

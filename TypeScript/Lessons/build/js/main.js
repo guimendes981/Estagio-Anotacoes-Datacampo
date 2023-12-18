@@ -28,9 +28,9 @@ const addAll = (a, b, c) => {
     return a + b; //if c is undefined, return a + b
 };
 //default parameters
-const sumAll = (a, b, c = 2) => {
+const sumAll = (a = 10, b, c = 2) => {
     return a + b + c; //if c is undefined, return a + b
 };
 logMsg(addAll(2, 2, 2)); //6
 logMsg(addAll(2, 2)); //4
-logMsg(sumAll(2, 2)); //6
+logMsg(sumAll(undefined, 2)); //6

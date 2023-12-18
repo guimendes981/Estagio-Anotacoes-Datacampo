@@ -155,6 +155,16 @@ const add = (a: number, b: number = 10) => {
 }
 ```
 
+- If a parameter has a default value and is not at the end of the list, we have to use 'undefined' to skip it
+
+```
+const add = (a: number = 10, b: number) => {
+    return a + b;
+}
+
+add(undefined, 20);
+```
+
 
 
 
