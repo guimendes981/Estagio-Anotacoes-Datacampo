@@ -42,13 +42,13 @@
 
 # Lesson3
 
-#### Arrays
+### Arrays
 
 - We can mix types in arrays, but it's not recommended
 
 - We can use 'let x: (string | number)[] = []' to set an array to only hold strings and numbers
 
-#### Tuples
+### Tuples
 
 - Tuples are arrays with a fixed number of elements, the types of the elements are known
 
@@ -57,7 +57,7 @@
 let x: [string, number] = ['hello', 10]
 ```
 
-#### Objects
+### Objects
 
 - We can use 'let x: {name: string, age: number} = {name: 'John', age: 30}' to set an object to only hold strings and numbers
 
@@ -66,7 +66,7 @@ let x: [string, number] = ['hello', 10]
 - If we want to make an object type optional we can use '?', for example 'let x: {name: string, age?: number} = {name: 'John'}', using '?' after a property name makes it optional
 
 
-#### Functions
+### Functions
 
 - By using ``` guitarist: Guitarist ``` we are saying that the function is expecting an object of type Guitarist
 
@@ -81,7 +81,7 @@ const greetGuitarist = (guitaris: Guitarist) => {
 - Use void when a function does not return anything
 
 
-#### Enums
+### Enums
 
 - Enums allow us to define a set of named constants, they make our code more readable and less prone to errors
 
@@ -93,7 +93,7 @@ const greetGuitarist = (guitaris: Guitarist) => {
 
 # Lesson 4
 
-#### Type Aliases
+### Type Aliases
 
 - Type aliases allow us to create a new name for a type, they are similar to interfaces but they can name primitives, unions, tuples and any other types that you'd otherwise have to write by hand
 
@@ -111,7 +111,7 @@ type Guitarist = {
 type UserId = stringOrNumber
 ```
 
-#### Literal Types
+### Literal Types
 
 - Literal types allow us to specify the exact value a string, number or boolean must have
 
@@ -127,7 +127,7 @@ type validNumbers = 1 | 2 | 3 | 4 | 5;
 let number: validNumbers = 3;
 ```
 
-#### optional parameters
+### optional parameters
 
 - We can use '?' to make a parameter optional
 
@@ -143,7 +143,7 @@ const add = (a: number, b?: number) => {
 }
 ```
 
-#### Default parameters
+### Default parameters
 
 - We can use '=' to set a default value for a parameter
 
@@ -164,6 +164,34 @@ const add = (a: number = 10, b: number) => {
 
 add(undefined, 20);
 ```
+
+### Rest parameterss
+
+- We can use '...' to set a rest parameter, it will be an array of the rest of the parameters
+
+```
+const add = (a: number, b: number, ...rest: number[]) => {
+    return a + b;
+}
+```
+
+- Rest parameters must be at the end of the parameter list
+
+- The rest parameter must be the last parameter, and it collects all the remaining arguments into an array
+
+- If we want to use a rest parameter but we don't want to pass any arguments, we can use '[]'
+
+```
+const add = (a: number, b: number, ...rest: number[]) => {
+    return a + b;
+}
+
+add(1, 2);
+```
+
+
+
+
 
 
 
