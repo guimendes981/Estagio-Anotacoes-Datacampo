@@ -210,6 +210,14 @@ const throwError = (message: string): never => {
 }
 ```
 
+# Lesson 5
+
+## Type Assertions
+
+- Sometime you will have information about the type of a value that TS can't know about
+
+
+
 
 
 
