@@ -25,7 +25,7 @@ let myVal: string = addOrConcat(1, 2, 'concat') as string
 let nextVal: number = addOrConcat(1, 2, 'concat') as number
 
 
-10 as string //this is a type assertion, not a type conversion
+// 10 as string //this is a type assertion, not a type conversion
 (10 as unknown) as string //this is a type assertion, not a type conversion
 
 
