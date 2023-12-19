@@ -217,6 +217,18 @@ const throwError = (message: string): never => {
 - Sometime you will have information about the type of a value that TS can't know about
 
 
+#### Angle-bracket syntax
+
+- We can use '<>' to tell TS what type a variable is
+
+```
+let x: any = 'Hello World';
+let y = (<string>x).toUpperCase();
+```
+
+- We cant use this syntax with JSX (React)
+
+
 
 
 
