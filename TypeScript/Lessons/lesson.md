@@ -217,6 +217,14 @@ const throwError = (message: string): never => {
 - Sometime you will have information about the type of a value that TS can't know about
 
 
+- By using ! we are telling TS that the value will never be null or undefined
+
+- HtmlImagElement is a type that TS knows about, but we can use 'as' to tell TS that the value is of that type
+
+```
+
+```
+
 #### Angle-bracket syntax
 
 - We can use '<>' to tell TS what type a variable is
@@ -227,6 +235,8 @@ let y = (<string>x).toUpperCase();
 ```
 
 - We cant use this syntax with JSX (React)
+
+
 
 
 
