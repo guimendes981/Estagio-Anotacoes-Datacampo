@@ -190,6 +190,30 @@ add(1, 2);
 ```
 
 
+## Never types
+
+- Never types are exclusive to functions that never return anything, such as functions that throw errors
+
+```
+const throwError = (message: string): never => {
+    throw new Error(message);
+}
+```
+
+- It will also be a never type if the function has an infinite loop or if it has a conditional that will always be false
+
+```
+const throwError = (message: string): never => {
+    while (true) {
+        console.log(message);
+    }
+}
+```
+
+
+
+
+
 
 
 

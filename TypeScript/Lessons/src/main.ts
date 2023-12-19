@@ -78,3 +78,22 @@ const total = (...nums: number[]): number => { //rest parameter
 }
 
 logMsg(total(1,2,3,4)) //10
+
+const createError = (errMsg: string) => {
+    throw new Error(errMsg);
+}
+
+const infinite = () => {
+    let i: number = 1
+    while (true) {
+        i ++;
+        if (i > 100) break
+    }
+}
+
+const numberOrString = (value: number | string): string => {
+    if (typeof value === 'string') {
+        return `Your number is ${value}`
+    }
+    return `Your string is ${value}`
+}

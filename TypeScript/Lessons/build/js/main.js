@@ -39,3 +39,20 @@ const total = (...nums) => {
     return nums.reduce((prev, curr) => prev + curr); //reduce is a method that takes a function and an initial value
 };
 logMsg(total(1, 2, 3, 4)); //10
+const createError = (errMsg) => {
+    throw new Error(errMsg);
+};
+const infinite = () => {
+    let i = 1;
+    while (true) {
+        i++;
+        if (i > 100)
+            break;
+    }
+};
+const numberOrString = (value) => {
+    if (typeof value === 'string') {
+        return `Your number is ${value}`;
+    }
+    return `Your string is ${value}`;
+};
