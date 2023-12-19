@@ -91,9 +91,19 @@ const infinite = () => {
     }
 }
 
+//custom type guard
+const isNumber = (value: any): boolean => {
+    return typeof value === 'number'
+     ? true : false
+}
+
+//use of nevertype
 const numberOrString = (value: number | string): string => {
     if (typeof value === 'string') {
-        return `Your number is ${value}`
+        return `string`
     }
-    return `Your string is ${value}`
+    if (isNumber(value)) {
+        return `number`
+    }
+    return createError('This should never happen')
 }
