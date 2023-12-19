@@ -13,4 +13,9 @@ const addOrConcat = (a, b, c) => {
 };
 //this will not pass because myVal is only a string
 let myVal = addOrConcat(1, 2, 'concat');
+//be careful, TS sees no problem - but a string is returned
 let nextVal = addOrConcat(1, 2, 'concat');
+10; //this is a type assertion, not a type conversion
+10; //this is a type assertion, not a type conversion
+// The DOM
+const img = document.getElementById('img');

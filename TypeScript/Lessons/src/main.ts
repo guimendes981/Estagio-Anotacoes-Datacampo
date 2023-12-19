@@ -20,4 +20,14 @@ const addOrConcat = (a: number, b: number, c: 'add' | 'concat'): number | string
 //this will not pass because myVal is only a string
 let myVal: string = addOrConcat(1, 2, 'concat') as string
 
+
+//be careful, TS sees no problem - but a string is returned
 let nextVal: number = addOrConcat(1, 2, 'concat') as number
+
+
+10 as string //this is a type assertion, not a type conversion
+(10 as unknown) as string //this is a type assertion, not a type conversion
+
+
+// The DOM
+const img = document.getElementById('img') as HTMLImageElement;
