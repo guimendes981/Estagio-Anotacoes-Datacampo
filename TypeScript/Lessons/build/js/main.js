@@ -19,3 +19,6 @@ let nextVal = addOrConcat(1, 2, 'concat');
 10; //this is a type assertion, not a type conversion
 // The DOM
 const img = document.getElementById('img');
+const myImg = document.getElementById('#img');
+img.src;
+myImg.src;
