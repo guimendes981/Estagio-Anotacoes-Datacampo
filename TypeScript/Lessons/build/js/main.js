@@ -20,5 +20,6 @@ let nextVal = addOrConcat(1, 2, 'concat');
 // The DOM
 const img = document.getElementById('img');
 const myImg = document.getElementById('#img');
+const nextImg = document.getElementById('img'); //this will not work in React
 img.src;
 myImg.src;
